@@ -82,7 +82,9 @@ server.all("*", (req, res) => {
 });
 
 async function main() {
-  await mongoose.connect("mongodb://localhost:27017/project");
+  await mongoose.connect(
+    "mongodb+srv://boluwatifefadipe3:YahK55b3CINWqsh1@cluster0.vymrkgv.mongodb.net/"
+  );
   console.log("DB connected");
 }
 
